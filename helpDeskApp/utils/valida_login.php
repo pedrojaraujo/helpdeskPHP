@@ -13,6 +13,10 @@ $users_app = [
     [
         'email' => 'user@teste.com.br',
         'senha' => 'abcd'
+    ],
+    [
+        'email' => 'pedro@email.com',
+        'senha' => '123pedro'
     ]
 ];
 
@@ -28,11 +32,11 @@ if ($user_authentication) {
     $_SESSION['autenticado'] = 'SIM';
     $_SESSION['x'] = 'valor x';
     $_SESSION['y'] = 'valor y';
-    header('Location: home.php');
+    header('Location: ../pages/home.php');
 
 } else {
     $_SESSION['autenticado'] = 'NAO';
-    header('Location: index.php?login=erro');
+    header('Location: ../index.php?login=erro');
 }
 
 
