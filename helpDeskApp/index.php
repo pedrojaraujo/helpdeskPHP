@@ -1,3 +1,5 @@
+
+
 <html>
 
 <head>
@@ -45,6 +47,15 @@
 
                 <div>
                   <p class="text-danger">Usuário inválido, tente novamente!</p>
+                </div>
+
+              <?php } ?>
+
+              <? if (isset($_GET['login']) && $_GET['login'] == 'erro2') {
+              ?>
+
+                <div>
+                  <p class="text-danger">Por gentileza, faça o login!</p>
                 </div>
 
               <?php } ?>

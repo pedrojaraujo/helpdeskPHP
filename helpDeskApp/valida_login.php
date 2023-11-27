@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+$user_authentication = false;
+
 $users_app = [
     [
         'email' => 'adm@teste.com.br',
@@ -12,7 +16,6 @@ $users_app = [
     ]
 ];
 
-$user_authentication = false;
 
 foreach ($users_app as $user) {
     if ($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
@@ -21,8 +24,12 @@ foreach ($users_app as $user) {
 }
 
 if ($user_authentication) {
-    echo 'Usuário autenticado!';
+    echo 'Usuário autenticado.';
+    $_SESSION['autenticado'] = 'SIM';
+    header('Location: home.php');
+
 } else {
+    $_SESSION['autenticado'] = 'NAO';
     header('Location: index.php?login=erro');
 }
 
@@ -37,8 +44,9 @@ echo $_POST['senha'];
 
  */
 
- 
+
 /* echo '<pre>';
 print_r($usuarios_app);
 echo '</pre>';
  */
+?>
