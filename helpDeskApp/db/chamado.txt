@@ -1,6 +1,3 @@
-Titulo: Notebook
-Categoria: Software
-Descrição:  Windows desatualizado!
-Titulo: Notebook
-Categoria: Software
-Descrição:  Windows desatualizado!
+Notebook#Software#Meu nootebook está com problema de validação do windows e não sei como resolver.
+Impressora#Hardware#Impressora está sem tinta.
+Sem internet#Rede#Não estou com sinal de internet!

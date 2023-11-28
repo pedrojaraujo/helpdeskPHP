@@ -1,14 +1,14 @@
 <?php
 //Montagem do texto
-$texto = "Titulo: {$_POST['titulo']}\nCategoria: {$_POST['categoria']}\nDescrição: {$_POST['descricao']}\n";
+$texto = "{$_POST['titulo']}#{$_POST['categoria']}#{$_POST['descricao']}" . PHP_EOL;
 
 
 //Criação do arquivo:
 
 
-$arquivo = '../db/chamado.txt';
 
-$arquivo = fopen($arquivo, 'a');
+
+$arquivo = fopen('../db/chamado.txt', 'a');
 
 echo '<pre>';
 print_r($texto);
