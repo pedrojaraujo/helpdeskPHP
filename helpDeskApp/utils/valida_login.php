@@ -17,7 +17,12 @@ $users_app = [
     [
         'email' => 'pedro@email.com',
         'senha' => '123pedro'
+    ],
+    [
+        'email' => 'admin@email.com',
+        'senha' => 'admin'
     ]
+
 ];
 
 
@@ -33,7 +38,6 @@ if ($user_authentication) {
     $_SESSION['x'] = 'valor x';
     $_SESSION['y'] = 'valor y';
     header('Location: ../pages/home.php');
-
 } else {
     $_SESSION['autenticado'] = 'NAO';
     header('Location: ../index.php?login=erro');
@@ -55,4 +59,3 @@ echo $_POST['senha'];
 print_r($usuarios_app);
 echo '</pre>';
  */
-?>

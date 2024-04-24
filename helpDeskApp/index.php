@@ -1,5 +1,3 @@
-
-
 <html>
 
 <head>
@@ -43,8 +41,7 @@
               <div class="form-group">
                 <input name="senha" type="password" class="form-control" placeholder="Senha">
               </div>
-              <? if (isset($_GET['login']) && $_GET['login'] == 'erro') {
-              ?>
+              <?php if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
 
                 <div>
                   <p class="text-danger">Usuário inválido, tente novamente!</p>
@@ -52,8 +49,7 @@
 
               <?php } ?>
 
-              <? if (isset($_GET['login']) && $_GET['login'] == 'erro2') {
-              ?>
+              <?php if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
 
                 <div>
                   <p class="text-danger">Por gentileza, faça o login!</p>
